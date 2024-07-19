@@ -4,6 +4,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Outfit;
+  color: #f0f4f9; /* Light text color for dark theme */
+  background-color: #121212; /* Dark background color */
 }
 #root{
   min-height: 100vh;

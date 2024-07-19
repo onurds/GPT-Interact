@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <div className='main'>
       <div className="nav">
-        <p>Gemini</p>
+        <p>GPT Interact</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -43,7 +43,7 @@ const Main = () => {
           </div>
           : <>
             <div className="greet">
-              <p><span>Hello, Dev.</span></p>
+              <p><span>Hello, Onur.</span></p>
               <p>How can I help you today?</p>
             </div>
             <div className="cards">
@@ -72,14 +72,14 @@ const Main = () => {
         <div className="main-bottom">
           <div className="search-box">
             <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
-            <div>
+            <div className="search-icons">
               <img src={assets.gallery_icon} width={30} alt="" />
               <img src={assets.mic_icon} width={30} alt="" />
               {input ? <img onClick={() => onSent()} src={assets.send_icon} width={30} alt="" /> : null}
             </div>
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
+            GPT Interact may display inaccurate info, including about people, so double-check its responses.
           </p>
         </div>
       </div>
